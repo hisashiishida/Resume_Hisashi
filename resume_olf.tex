@@ -1,0 +1,209 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Hisashi Ishida} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{{+1 667-910-2558} \\
+\href{mailto:hishida3@jhu.edu}{hishida3@jhu.edu} \\ \href{https://www.linkedin.com/in/hisashi-ishida95}{www.linkedin.com/in/hisashi-ishida95}} 
+\address{\\
+\href{https://youtube.com/playlist?list=PLgAkMcuvrL6i8IJakd_I2R_A4B1KCt3tW}{youtube.com/playlist?list=PLgAkMcuvrL6i8IJakd_I2R_A4B1KCt3tW} \\
+U.S. Citizen
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{OBJECTIVE}
+
+% {I am a 2nd-year Ph.D. student at JHU with 4+ years of research experience, especially in surgical robotics, seeking an internship position in 2023 summer.}
+
+% \end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Johns Hopkins University, Baltimore, MD, USA}  \hfill {August 2021 - Present}\\
+Ph.D. student in Computer Science
+% Advisor: Professor Peter Kazanzides, Professor Russell Taylor
+advised by Dr. Peter Kazanzides and  Dr. Russell H. Taylor
+
+{\bf The University of Tokyo, Tokyo, Japan}  \hfill {April 2021 - August 2021}\\
+Ph.D. student in Mechanical Engineering
+% Advisor: Professor Harada Kanako
+advised by Dr. Harada Kanako
+
+{\bf The University of Tokyo, Tokyo, Japan}  \hfill {April 2019 - March 2021}\\
+Master of Science in Mechanical Engineering
+% Advisor: Professor Mamoru Mitsuishi
+advised by Dr. Mamoru Mitsuishi
+
+{\bf Massachusetts Institute of Technology, Massachusetts, U.S.A.}  \hfill {February 2017 - May 2017}\\
+Special Student Program, Mechanical Engineering
+
+{\bf The University of Tokyo, Tokyo, Japan}  \hfill {April 2015 - March 2019}\\
+Bachelor of Science in Mechanical Engineering
+% Advisor: Professor Mamoru Mitsuishi
+advised by Dr. Mamoru Mitsuishi
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Engineer Intern} \hfill November 2020 - April 2021\\
+SENSYN ROBOTICS \hfill \textit{Tokyo, JAPAN}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Developed digital twin pipeline for remote control for power shovel to optimize human resources while enhancing construction site safety.
+     \item Implemented the visual interface to monitor surrounding environment of power shovel and assist the operator by providing information of the target. 
+
+     \item Skills: C++, Robot Operation System (ROS), RViz, Gazebo, Unified Robot Description Format (URDF)
+ \end{itemize}
+ 
+% \textbf{Engineer Intern} \hfill February 2020 - May 2020\\
+% SCANX \hfill \textit{Tokyo, JAPAN}
+%  \begin{itemize}
+%     \itemsep -3pt {} 
+%      \item Prototyped system for monitoring safety of employees in order to avoid construction site falls.
+%      \item Developed system for tracking the employees' motion and tracing them on blueprints of the construction site.
+%      \item Skills: C++, RealSense T265, ROS, RViz
+%  \end{itemize}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+\item \textbf{SDF-based Guidance Modalities for
+Mastoidectomy Procedures.}\\
+Johns Hopkins University, January 2022 - November 2022
+\begin{itemize}
+\itemsep -3pt {} 
+\item Developed a multimodal navigation system for a mastoidectomy VR simulation to identify the effect of different modalities (visual, audio, and haptic) on performance and mental demands.
+    \item Implemented visual, audio, and haptic feedback using Signed Distance Field (SDF).
+    \item Evaluated system with expert otolaryngology surgeons and shown that the system improved procedural safety without no additional time or workload.
+\end{itemize}
+\item \textbf{Semi-autonomous Assistance for Telesurgery
+under Communication Loss.}\\
+Johns Hopkins University, November 2021 - September 2022
+
+\begin{itemize}
+\itemsep -3pt {} 
+    \item Proposed a telesurgery simulation framework that models an environment incorporating local and remote sites which can be applicable to provide high-quality surgery to medically underserved areas.
+    \item Analyzed human behavior when there is a communication loss using the developed simulation and modeled the behavior using Kalman Filter.
+    \item Provided different forms of assistance both under communication failure and when communication is restored. 
+    
+\end{itemize}
+\item \textbf{Combined Segmentation Method for Harmonic scalpel using ResUnet and Classifier.}\\
+Japan Society of Computer Aided Surgery AI Challenge, September 2020 - November 2020
+\begin{itemize}
+\itemsep -3pt {} 
+\item Implemented semantic segmentation architecture (ResUnet) for the active blade of the harmonic scalpel and classification method for identifying the model of the scalpel.
+    \item Adopted data augmentation methods to prevent over-fitting to dataset and improved accuracy to 90.6\%.
+\end{itemize}
+\item \textbf{Virtual Fixture Assistance for Suturing in Robot-Aided Pediatric Endoscopic Surgery.}\\
+Master Thesis, the University of Tokyo, March 2021.
+\begin{itemize}
+\itemsep -3pt {} 
+    \item Propose guidance virtual fixtures to enhance the performance and the safety of suturing while generating the required task constraints using constrained optimization and Cartesian force feedback. 
+    \item Tested in simulations (CoppeliaSim) and experiments with a physical robot (DENSO VS050).
+    \item Accepted to R-AL and presented at ICRA2020.
+\end{itemize}
+\end{rSection} 
+
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publication} 
+\begin{itemize}
+    \item \textbf{Hisashi Ishida}*, Juan Antonio Barragan* \textit{et al.} “Design and Evaluation of Real-time SDF-based Guidance Modalities for Mastoidectomy Procedures.” Submitted to the 14th International Conference on Information Processing in Computer-Assisted Intervention (IPCAI).Under Review. (*equal contributions)
+
+\item \textbf{Hisashi Ishida}, Adnan Munawar, Russell H. Taylor, Peter Kazanzides. “Semi-autonomous Assistance for Telesurgery under Communication Loss.” Submitted to 2023 IEEE International Conference on Robotics and Automation (ICRA). Under Review.
+
+\item \textbf{Hisashi Ishida}, Murilo M. Marinho, Kanako Harada, Mamoru Mitsuishi. “Preliminary Study on Looping Trajectory Classification for Robot-assisted Suturing in Pediatric Endoscopic Surgery.” 16th Asian Conference on Computer Aided Surgery (ACCAS), Tokyo, Japan, November 2020. Excellent Paper Award.
+
+\item Risa Oikawa, Murilo M. Marinho, \textbf{Hisashi Ishida}, Kanako Harada, Mamoru Mitsuishi. “Towards the Semi-Automation of Looping in Robot Assisted Pediatric Endoscopic Surgery.” 16th Asian Conference on Computer Aided Surgery (ACCAS), Tokyo, Japan, November 2020.
+
+\item Murilo M. Marinho*, \textbf{Hisashi Ishida}*, Kanako Harada, Kyoichi Deie, and Mamoru Mitsuishi. “Virtual Fixture Assistance for Suturing in Robot-Aided Pediatric Endoscopic Surgery.” IEEE Robotics and Automation Letters (RA-L), 5(2): 524–531, April 2020. Also presented at 2020 IEEE International Conference on Robotics and Automation (ICRA). (*equal contributions)
+
+\item \textbf{Hisashi Ishida}, Murilo M. Marinho, Kanako Harada, Jian Gao, Mamoru Mitsuishi. “Virtual-Fixtures for Robotic-Assisted Bi-Manual Cutting Using Vector-Field Inequalities.” Proceedings of the 2020 IEEE/SICE International Symposium on System Integration (SII): 395-400, January 2020.
+
+\item \textbf{Hisashi Ishida}, Murilo M. Marinho, Kanako Harada, Mamoru Mitsuishi. “Virtual Fixtures for Suturing in Robot-Aided Pediatric Endoscopic Surgery.” Proceedings of the 14th Asian Conference on Computer Aided Surgery (ACCAS): 50-51, November 2018.
+
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Awards and Honors}
+\begin{itemize}
+    \item \textbf{Honorable Mention} \hfill April 2022\\
+    EN601.682 Machine Learning: Deep Learning course project
+    Title: “Surgical Gesture Recognition in Videos and Kinematic Data.” Johns Hopkins University
+
+    \item \textbf{Dean’s Award, The University of Tokyo} \hfill March 2021\\
+    Awarded as the top graduate from Mechanical Engineering department.
+
+    \item \textbf{Excellent Paper Award} \hfill November 2020\\
+    16th Asian Conference on Computer Aided Surgery
+
+    \item \textbf{Silver Award, Japan Society of Computer Aided Surgery AI Challenge} \hfill November 2020\\
+    Surgical tool segmentation competition. 
+
+    \item \textbf{Silver Award and Audience Award} \hfill March 2019\\
+    Sony-University of Tokyo Startup Idea Competition
+
+    \item \textbf{Best Design Award} (Mechanical Engineering Practice Modules 2 Course), \hfill March 2018\\
+    Department of Mechanical Engineering, The University of Tokyo
+    
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
+    \textbf{Programming skills:} C++, C, Python, OpenGL, OpenMP, MATLAB \\
+    \textbf{Hardware:} Arudino, Raspberry Pi \\
+    \textbf{Robot system design:} ROS, URDF  \\
+    \textbf{Simulation:} AMBF, Rviz, CoppeliaSim, Gazebo \\
+    \textbf{Deep learning framework:} PyTorch \\
+\end{tabular}\\
+\end{rSection}
+
+
+\begin{rSection}{FELLOWSHIPS }
+    \begin{itemize}
+    \item \textbf{ITO Foundation fellowship} \hfill    2021 - 2023 \\
+    Awarded 2-year fellowship (\$50,000/year) for Ph.D. study in the US. 
+
+
+    \item \textbf{JSPS DC1 fellowship} \hfill   2021 \\
+    Research fellowship(\$8,000 for research grant and \$2,000 for stipends) for young doctoral students from Japan Society for the Promotion of Science (JSPS).
+
+    \item \textbf{Global Leader Program for Social Design and Management} \hfill 2019 - 2021\\
+    Awarded monthly fellowship (\$2,000 for stipends) for graduate study, The University of Tokyo.
+
+    \item \textbf{World-leading Innovative Graduate Study Program Co-Designing Future Society} \hfill 2019 - 2021\\
+    Awarded monthly fellowship (\$2,000 for stipends) for graduate study, The University of Tokyo.
+    
+    \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Others}
+    \begin{itemize}
+    \item Japanese: Native speaker
+    \item English: Fluent speaker (TOEFL iBT 107).
+    \end{itemize}
+\end{rSection}
+
+\end{document}
